@@ -1,1 +1,49 @@
-Test
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Longview Harbor LLC — Proprietary Investments</title>
+  <meta name="description" content="Longview Harbor LLC — privately held, research‑driven proprietary investment firm. No public solicitation." />
+  <style>
+    :root{ --fg:#000; --muted:#333; --pad:clamp(16px,3vw,28px); --space:clamp(36px,1vw,72px); }
+    *{ box-sizing:border-box }
+    html, body{ height:100% }
+    html{ scroll-behavior:smooth }
+    body{
+      margin:0; background:#fff; color:var(--fg);
+      font-family:"Helvetica Neue", Helvetica, Arial, ui-sans-serif, system-ui, -apple-system;
+      -webkit-font-smoothing:antialiased; text-rendering:optimizeLegibility;
+      display:flex; flex-direction:column; min-height:100vh;
+    }
+    main{ flex:1; }
+    .wrap{ width:90vw; margin:0 auto; padding:var(--pad) 0; text-align:center }
+    .logo{ display:block; margin:0 auto var(--space); height:auto }
+    p{ color:var(--muted); font-size:clamp(18px,2.2vw,22px); line-height:1.7; margin:0 auto 1.2em auto; max-width:70ch; text-align:justify }
+    footer{ color:#666; font-size:14px; padding:var(--pad) 0; margin-top:auto }
+    .footer-wrap{ width:90vw; margin:0 auto; text-align:center }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="wrap">
+      <img class="logo" src="logo.png" alt="Longview Harbor Logo" />
+
+      <p>Longview Harbor LLC is a privately held, USA–based entity deploying its own capital to invest across select liquid markets. Our approach blends fundamental insight with systematic research, emphasizing capital preservation, measured risk, and repeatable processes.</p>
+      
+      <p>We are not open to outside investors and do not solicit or accept third‑party capital. We operate opportunistically across liquid assets where our research indicates favorable risk‑adjusted return prospects. Portfolio construction is guided by risk budgets, scenario analysis, and liquidity considerations.</p>
+      
+      <p>Information on this website is for informational purposes only and does not constitute an offer or solicitation in any jurisdiction. Longview Harbor LLC manages only proprietary capital and does not provide investment advice to the public.</p>
+    </div>
+  </main>
+
+  <footer>
+    <div class="footer-wrap">
+      © <span id="year"></span> Longview Harbor LLC · Private proprietary investment entity. No public solicitation.
+    </div>
+  </footer>
+
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
+
